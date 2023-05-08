@@ -8,6 +8,16 @@ There are three modes, suitable for different trading scenarios:
 - Generate S/R zones surrounding the latest price
 - Generate historic S/R levels surrounding the latest price
 
+Requirements:
+
+- Python 3
+- numpy
+- scipy.signal
+- sklearn.metrics
+- sklearn.cluster
+- matplotlib.pyplot
+
+
 Usage:
 
 ```
@@ -27,14 +37,18 @@ plot_supres(df=df, title=ticker, filename=f"{ticker}.png",show_latest=False,show
 
 Please see the images for sample outputs from all modes.
 
-Requirements:
+![plot](./DIA_SR_Closest.png)
 
-- Python 3
-- numpy
-- scipy.signal
-- sklearn.metrics
-- sklearn.cluster
-- matplotlib.pyplot
+
+![plot](./DIA_SR_Latest.png)
+
+
+![plot](./DIA_SR_All.png)
+
+
+
+
+
 
 This repository is inspired by https://github.com/JOravetz/stock_support_resistance_analysis
 
